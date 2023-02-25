@@ -1,0 +1,69 @@
+.addPlaylist-model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000004d;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms;
+  .addPlaylist {
+    background-color: #fff;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    .header {
+      background-color: #eeeeee;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      h6 {
+        margin-bottom: 0;
+      }
+      .buttons {
+        .cancel {
+          background-color: #ffffff;
+          color: #bdbdbd;
+          margin-left: 10px;
+        }
+      }
+    }
+    .form {
+      margin-bottom: 20px;
+      padding: 0 20px;
+      input {
+        border: none;
+        border-bottom: 1px solid #f1f1f1;
+        border-radius: 0;
+      }
+      input:focus {
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid #deae2a;
+      }
+      p {
+        color: rgb(221, 7, 7);
+        margin-top: 5px;
+      }
+    }
+  }
+}
+.show-addPlaylist {
+  opacity: 1;
+  visibility: visible;
+  .addPlaylist {
+    animation: toggleForm 400ms ease-in-out;
+  }
+  @keyframes toggleForm {
+    0% {
+      transform: scale(0.7);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

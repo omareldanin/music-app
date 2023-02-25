@@ -1,0 +1,45 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100vh;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-right: 1px solid #f0f0f0;
+  z-index: 5;
+  box-sizing: border-box;
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    img {
+      width: 70px;
+    }
+    h2 {
+      margin: 0 10px;
+      // color: #deae2a;
+    }
+  }
+  .pages {
+    .link {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin-bottom: 30px;
+      text-decoration: none;
+      color: #a1a5ac;
+      svg {
+        width: 22px;
+        margin-right: 10px;
+        fill: #a1a5ac;
+      }
+    }
+    .active {
+      color: #000;
+      svg {
+        fill: #000;
+      }
+    }
+  }
+}

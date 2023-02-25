@@ -1,0 +1,81 @@
+.addToPlaylist {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000004d;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms;
+  .playlists {
+    background-color: #fff;
+    width: 600px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    .header {
+      background-color: #eeeeee;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      h6 {
+        margin-bottom: 0;
+      }
+      .buttons {
+        .cancel {
+          background-color: #ffffff;
+          color: #bdbdbd;
+          border: 1px solid #bdbdbd;
+          margin-left: 10px;
+        }
+      }
+    }
+    .playlist {
+      display: flex;
+      width: calc(100% - 40px);
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #bdbdbd;
+      padding-bottom: 7px;
+      margin: 20px;
+      .info {
+        display: flex;
+        .image {
+          img {
+            width: 50px;
+            border-radius: 5px;
+          }
+        }
+      }
+      .nameAndnumber {
+        margin-left: 10px;
+        p {
+          margin-bottom: 0;
+          font-size: 14px;
+        }
+        p:first-child {
+          color: #000;
+          margin-bottom: 5px;
+        }
+      }
+      button {
+        border: none;
+        height: fit-content;
+        background-color: #fff;
+        color: #bdbdbd;
+        border: 1px solid #bdbdbd;
+        padding: 3px 10px;
+        border-radius: 15px;
+      }
+      .added {
+        color: #deae2a !important;
+        cursor: no-drop;
+      }
+    }
+  }
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}

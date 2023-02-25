@@ -1,0 +1,41 @@
+.deletePlaylist {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000004d;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms;
+  text-align: center;
+  .delete {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    p {
+      font-size: 17px;
+      font-weight: bold;
+      color: #deae2a;
+    }
+    .buttons {
+      button {
+        border: none;
+        margin: 0 5px;
+        padding: 5px 20px;
+        border-radius: 20px;
+      }
+      button:nth-child(1) {
+        background-color: #deae2a;
+        color: #fff;
+      }
+    }
+  }
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}

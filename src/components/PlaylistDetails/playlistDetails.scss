@@ -1,0 +1,48 @@
+.playlist-details {
+  .header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    .image {
+      margin-right: 20px;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+  .playlist-info {
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .songs {
+    .song {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f7f7f7;
+      .song-header {
+        display: flex;
+        align-items: center;
+        .image {
+          img {
+            width: 50px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .delete {
+        cursor: pointer;
+        svg {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
